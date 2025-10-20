@@ -53,7 +53,10 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <textarea name="message" rows="5" placeholder="Write your grievance here..." required></textarea>
             <button type="submit">Submit</button>
-        <form action="https://formspree.io/f/xblzelra" method="POST" data-form="redirect" onsubmit="window.location.href='thankyou.html'; return false;">
+        <form action="https://formspree.io/f/xblzelra" method="POST">
+    <input type="hidden" name="_next" value="thankyou.html">
+    ...
+</form>
     </div>
 </body>
 </html>
